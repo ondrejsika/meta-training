@@ -4,6 +4,11 @@
 
 # Meta Training
 
+## Windows Terminal
+
+- https://github.com/microsoft/terminal
+- https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701
+
 <!-- BEGIN footer -->
 ## Thank you! & Questions?
 
