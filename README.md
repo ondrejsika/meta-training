@@ -9,6 +9,37 @@
 - https://github.com/microsoft/terminal
 - https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701
 
+## WSL
+
+- https://docs.microsoft.com/en-us/windows/wsl/
+- https://docs.microsoft.com/en-us/windows/wsl/install
+
+## Install WSL
+
+Install WSL
+
+```
+wsl --install
+```
+
+**Reboot**
+
+Install Debian into WSL
+
+```
+wsl --install -d debian
+```
+
+Complete installation in separed window.
+
+Run WSL Debian
+
+```
+wsl
+```
+
+or open Debian in own tab in Windows Terminal
+
 <!-- BEGIN footer -->
 ## Thank you! & Questions?
 
