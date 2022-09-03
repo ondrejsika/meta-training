@@ -40,6 +40,40 @@ wsl
 
 or open Debian in own tab in Windows Terminal
 
+## Package Managers
+
+## Chocolatey
+
+- https://chocolatey.org/
+- https://chocolatey.org/install#individual
+
+## Install Chocolatey
+
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+## Scoop
+
+- https://scoop.sh/
+- https://github.com/ScoopInstaller/Install#readme
+
+## Install Scoop
+
+As regual user (not administrator powershell)
+
+```
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
+```
+
+As administrator
+
+```
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
+```
+
 <!-- BEGIN footer -->
 ## Thank you! & Questions?
 
