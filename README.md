@@ -78,6 +78,18 @@ iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 
 - https://github.com/siklabs/slu
 
+## Bash
+
+## Bash Shortcuts
+
+- `ctrl` + `a` - move to start of the line
+- `ctrl` + `e` - move to end of the line
+- `ctrl` + `w` - delete one word
+- `ctrl` + `l` - clear output
+- `ctrl` + `d` - send eof, exit shell
+- `ctrl` + `d` - send sig term
+- `ctrl` + `\` - send sig kill
+
 <!-- BEGIN footer -->
 ## Thank you! & Questions?
 
