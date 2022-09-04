@@ -139,6 +139,38 @@ Specific
 - Go - https://marketplace.visualstudio.com/items?itemName=golang.Go
 - Prettier - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
+## Git
+
+## Slu for Git
+
+### `slu git url open`
+
+Try:
+
+```
+slu git url open
+```
+
+Alias
+
+```
+alias guo="slu git url open"
+
+guo
+```
+
+### `slu git use-ssh`
+
+Try:
+
+```
+git clone https://github.com/sikalabs/hello-world-server.git
+cd hello-world-server
+git remote -v
+slu git use-ssh
+git remote -v
+```
+
 ## Bash
 
 ## Bash Shortcuts
