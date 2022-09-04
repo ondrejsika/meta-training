@@ -8,3 +8,6 @@
 # Generic
 *.log
 *.backup
+
+# Node JS
+node_modules
