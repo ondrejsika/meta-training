@@ -183,6 +183,13 @@ git remote -v
 - `ctrl` + `d` - send sig term
 - `ctrl` + `\` - send sig kill
 
+## Vim
+
+## Vim Cheat Sheets
+
+- https://devhints.io/vim
+- https://vim.rtorr.com/
+
 ## Bash Utils
 
 ### Watch
