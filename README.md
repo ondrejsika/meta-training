@@ -74,6 +74,10 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 ```
 
+## Slu - SikaLabs Utils
+
+- https://github.com/siklabs/slu
+
 <!-- BEGIN footer -->
 ## Thank you! & Questions?
 
