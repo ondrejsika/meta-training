@@ -124,6 +124,78 @@ slu watch -s 100 -- date
 slu w -- date
 ```
 
+## Make
+
+Simple example
+
+```
+cd ./examples/make/simple
+```
+
+```
+make
+```
+
+```
+make build
+```
+
+```
+make push
+```
+
+```
+make echo
+```
+
+```
+make shell
+```
+
+Variables example
+
+```
+cd ./examples/make/variables
+```
+
+```
+make
+```
+
+```
+make HELLO=Ahoj
+```
+
+```
+make say
+```
+
+```
+MSG=Ahoj make say
+```
+
+```
+make say MSG=Hello
+```
+
+```
+MSG=Ahoj make say MSG=Hello
+```
+
+DRY (don't repeat yourself) example
+
+```
+cd ./examples/make/dry
+```
+
+```
+make
+```
+
+```
+make build-push PROJECT=foo
+```
+
 <!-- BEGIN footer -->
 
 ## Thank you! & Questions?
