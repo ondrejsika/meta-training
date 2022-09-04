@@ -192,6 +192,32 @@ git remote -v
 
 ## Bash Utils
 
+### ts (in moreutils)
+
+Install
+
+```
+apt install moreutils
+```
+
+```
+brew install moreutils
+```
+
+Example usage
+
+```
+slu example counter-cli
+```
+
+```
+slu example counter-cli | ts
+```
+
+```
+slu example counter-cli | ts -s
+```
+
 ### `tree`
 
 ```
