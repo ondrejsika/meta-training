@@ -215,6 +215,10 @@ slu watch -s 100 -- date
 slu w -- date
 ```
 
+## Dotfiles
+
+- https://github.com/ondrejsika/dotfiles
+
 ## Make
 
 Simple example
