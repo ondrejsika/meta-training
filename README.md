@@ -139,6 +139,26 @@ Specific
 - Go - https://marketplace.visualstudio.com/items?itemName=golang.Go
 - Prettier - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
+## VS Code Remote SSH
+
+![](images/remote_ssh/1.png)
+
+![](images/remote_ssh/2.png)
+
+![](images/remote_ssh/3.png)
+
+![](images/remote_ssh/4.png)
+
+![](images/remote_ssh/5.png)
+
+![](images/remote_ssh/6.png)
+
+![](images/remote_ssh/7.png)
+
+![](images/remote_ssh/8.png)
+
+![](images/remote_ssh/9.png)
+
 ## Git
 
 ## Slu for Git
