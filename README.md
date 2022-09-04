@@ -110,6 +110,16 @@ Windows Chocolatey
 choco install vscode
 ```
 
+## VS Code Keyboard Shortcuts
+
+- https://code.visualstudio.com/docs/getstarted/keybindings
+
+Keyboard Shortcuts Reference
+
+- Mac - https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
+- Windows - https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+- Linux - https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf
+
 ## VS Code Plugins
 
 General
