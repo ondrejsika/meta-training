@@ -84,6 +84,32 @@ iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 
 - https://github.com/siklabs/slu
 
+## Visual Studio Code
+
+- https://code.visualstudio.com/
+- https://vscode.dev/
+- https://apps.microsoft.com/store/detail/visual-studio-code/XP9KHM4BK9FZ7Q
+
+## Install VS Code
+
+Windows Store
+
+- https://apps.microsoft.com/store/detail/visual-studio-code/XP9KHM4BK9FZ7Q
+
+Windows Winget
+
+- https://winget.run/pkg/Microsoft/VisualStudioCode
+
+```
+winget install -e --id Microsoft.VisualStudioCode
+```
+
+Windows Chocolatey
+
+```
+choco install vscode
+```
+
 ## Bash
 
 ## Bash Shortcuts
