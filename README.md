@@ -192,6 +192,24 @@ git remote -v
 
 ## Bash Utils
 
+### `tree`
+
+```
+tree
+```
+
+Show hidden files using `-a`
+
+```
+tree -a
+```
+
+Specify max depth by `-L <depth>`
+
+```
+tree -a -L 2
+```
+
 ### Watch
 
 ```bash
