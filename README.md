@@ -90,6 +90,38 @@ iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 - `ctrl` + `d` - send sig term
 - `ctrl` + `\` - send sig kill
 
+## Bash Utils
+
+### Watch
+
+```bash
+watch date
+```
+
+```bash
+watch -n 0.5 date
+```
+
+```bash
+alias w="watch -n 0.3"
+
+w date
+```
+
+### Slu Watch
+
+```bash
+slu watch -- date
+```
+
+```bash
+slu watch -s 100 -- date
+```
+
+```bash
+slu w -- date
+```
+
 <!-- BEGIN footer -->
 ## Thank you! & Questions?
 
