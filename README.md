@@ -161,6 +161,12 @@ Specific
 
 ## Git
 
+## Git Rebase Interactive
+
+```
+git rebase -i HEAD~10
+```
+
 ## Slu for Git
 
 ### `slu git url open`
