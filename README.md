@@ -76,6 +76,10 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 ```
 
+## Winget
+
+- https://docs.microsoft.com/en-us/windows/package-manager/
+
 ## Slu - SikaLabs Utils
 
 - https://github.com/siklabs/slu
