@@ -219,6 +219,19 @@ slu w -- date
 
 - https://github.com/ondrejsika/dotfiles
 
+## PowerShell Profiles (.bashrc in PowerShell)
+
+- https://superuser.com/a/1090171
+- https://devblogs.microsoft.com/scripting/understanding-the-six-powershell-profiles/
+
+```
+vim $profile
+```
+
+```
+vim C:\Users\demo\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps
+```
+
 ## Make
 
 Simple example
