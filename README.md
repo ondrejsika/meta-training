@@ -110,6 +110,25 @@ Windows Chocolatey
 choco install vscode
 ```
 
+## VS Code Plugins
+
+General
+
+- EditorConfig - https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+- Git Graph - https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
+- Remote - SSH - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
+- GitHub Copilot - https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
+
+Specific
+
+- GitLab Workflow / Gitlab CI - https://marketplace.visualstudio.com/items?itemName=GitLab.gitlab-workflow
+- Docker - https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker
+- Kubernetes - https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools
+- Terraform - https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform
+- Infracost - https://marketplace.visualstudio.com/items?itemName=Infracost.infracost
+- Go - https://marketplace.visualstudio.com/items?itemName=golang.Go
+- Prettier - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
 ## Bash
 
 ## Bash Shortcuts
