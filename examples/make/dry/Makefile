@@ -26,11 +26,11 @@ _push:
 ifndef PROJECT
 	$(error PROJECT is undefined)
 endif
-	echo docker build $(PROJECT) frontend ... && sleep 1
+	echo docker push $(PROJECT) frontend ... && sleep 1
 	@echo
-	echo docker build $(PROJECT) backend ... && sleep 1
+	echo docker push $(PROJECT) backend ... && sleep 1
 	@echo
-	echo docker build $(PROJECT) db ... && sleep 1
+	echo docker push $(PROJECT) db ... && sleep 1
 	@echo
-	echo docker build $(PROJECT) worker ... && sleep 1
+	echo docker push $(PROJECT) worker ... && sleep 1
 	@echo
