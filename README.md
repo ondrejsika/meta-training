@@ -113,6 +113,26 @@ Windows Chocolatey
 choco install vscode
 ```
 
+## VS Code Configuration
+
+Open configuation by `cmd` + `shift` + `p` or `ctrl` + `shift` + `p` and use **Open User Setting (JSON)**.
+
+### Sidebar Position Right
+
+```json
+{
+  "workbench.sideBar.location": "right"
+}
+```
+
+### Sticky Scroll
+
+```json
+{
+  "editor.stickyScroll.enabled": true
+}
+```
+
 ## VS Code Keyboard Shortcuts
 
 - https://code.visualstudio.com/docs/getstarted/keybindings
