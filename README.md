@@ -15,6 +15,7 @@
 
 - https://docs.microsoft.com/en-us/windows/wsl/
 - https://docs.microsoft.com/en-us/windows/wsl/install
+- https://docs.microsoft.com/en-us/windows/wsl/install-manual
 
 ## Install WSL
 
