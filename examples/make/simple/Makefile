@@ -13,3 +13,4 @@ echo:
 shell:
 	echo $(shell date)
 	echo $$(date)
+	echo `date`
