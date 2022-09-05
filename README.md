@@ -80,6 +80,8 @@ iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 ## Winget
 
 - https://docs.microsoft.com/en-us/windows/package-manager/
+- https://docs.microsoft.com/en-us/windows/package-manager/winget/
+- https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1
 
 ## Slu - SikaLabs Utils
 
