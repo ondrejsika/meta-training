@@ -133,7 +133,7 @@ Open configuation by `cmd` + `shift` + `p` or `ctrl` + `shift` + `p` and use **O
 }
 ```
 
-## VS Code Keyboard Shortcuts
+## VS Code Keyboard Shortcuts (Cheet sheet)
 
 - https://code.visualstudio.com/docs/getstarted/keybindings
 
