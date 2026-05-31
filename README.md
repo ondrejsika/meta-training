@@ -1,6 +1,6 @@
 <!-- BEGIN header -->
 
-[Ondrej Sika (sika.io)](https://sika.io) | <ondrej@sika.io>
+[Ondrej Sika (sika.io)](https://sika.io) | <ondrej@sika.io> | [**Meta Skoleni**](https://ondrej-sika.cz/skoleni/meta/) 🚀💻
 
 <!-- END header -->
 
