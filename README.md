@@ -256,15 +256,15 @@ brew install moreutils
 Example usage
 
 ```
-slu example counter-cli
+slu scripts counter
 ```
 
 ```
-slu example counter-cli | ts
+slu scripts counter | ts
 ```
 
 ```
-slu example counter-cli | ts -s
+slu scripts counter | ts -s
 ```
 
 ### `tree`
