@@ -83,6 +83,18 @@ iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 - https://docs.microsoft.com/en-us/windows/package-manager/winget/
 - https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1
 
+## Brew / Homebrew
+
+Package manager on Mac
+
+- https://brew.sh/
+
+### Install Brew
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 ## Slu - SikaLabs Utils
 
 - https://github.com/siklabs/slu
