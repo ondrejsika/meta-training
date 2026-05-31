@@ -352,6 +352,10 @@ vim $profile
 vim C:\Users\demo\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps
 ```
 
+## Go CLI
+
+Example: <https://github.com/ondrejsikax/2026-05-31-o2-cli>
+
 ## Make
 
 Simple example
