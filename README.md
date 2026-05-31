@@ -125,6 +125,12 @@ Windows Chocolatey
 choco install vscode
 ```
 
+Brew
+
+```
+brew install --cask visual-studio-code
+```
+
 ## VS Code Configuration
 
 Open configuation by `cmd` + `shift` + `p` or `ctrl` + `shift` + `p` and use **Open User Setting (JSON)**.
