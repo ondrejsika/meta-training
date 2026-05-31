@@ -133,7 +133,9 @@ brew install --cask visual-studio-code
 
 ## VS Code Configuration
 
-Open configuation by `cmd` + `shift` + `p` or `ctrl` + `shift` + `p` and use **Open User Setting (JSON)**.
+Open configuation by `cmd` + `shift` + `p` or `ctrl` + `shift` + `p` and use **Preferences: Open User Setting (JSON)**.
+
+You can also open the settings using `cmd` + `p` or `ctrl` + `p` (standart file search without `shift`) and use **> Preferences: Open User Setting (JSON)** (with a `>` as the first character in search bar).
 
 ### Sidebar Position Right
 
