@@ -1,6 +1,6 @@
 <!-- BEGIN header -->
 
-[Ondrej Sika (sika.io)](https://sika.io) | <ondrej@sika.io> | [join slack](https://sika.link/slack-sikapublic), [open slack](https://sikapublic.slack.com)
+[Ondrej Sika (sika.io)](https://sika.io) | <ondrej@sika.io>
 
 <!-- END header -->
 
