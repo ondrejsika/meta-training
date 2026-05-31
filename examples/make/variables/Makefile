@@ -1,8 +1,11 @@
 HELLO = "Hello"
 
-say-hello:
+echo-hello:
 	echo $(HELLO)
 	echo ${HELLO}
+
+say-hello:
+	@make say MSG=${HELLO}
 
 say:
 ifndef MSG
