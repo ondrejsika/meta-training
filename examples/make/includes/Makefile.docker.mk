@@ -1,5 +1,7 @@
+IMAGE = example/app
+
 build:
-	echo docker build -t example/app .
+	echo docker build -t ${IMAGE} .
 
 push:
-	echo docker push example/app
+	echo docker push ${IMAGE}
