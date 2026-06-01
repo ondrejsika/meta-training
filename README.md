@@ -436,6 +436,26 @@ This makes `vm.sikademo.com:8000` connect to port `80` on your local machine.
 | `-L port:host:port` | Local port forwarding                       |
 | `-R port:host:port` | Remote port forwarding                      |
 
+### SCP - Copy Files over SSH
+
+Copy a file to remote:
+
+```
+scp file.txt root@vm.sikademo.com:/root/
+```
+
+Copy a directory:
+
+```
+scp -r ./mydir root@vm.sikademo.com:/root/
+```
+
+Copy from remote:
+
+```
+scp root@vm.sikademo.com:/root/file.txt .
+```
+
 ## Git
 
 ## Git Rebase Interactive
