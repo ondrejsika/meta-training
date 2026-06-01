@@ -769,12 +769,17 @@ The `Makefile` uses `include` to split targets into separate files:
 
 ```makefile
 include Makefile.*.mk
+-include Makefile.local.mk
 ```
 
 - `Makefile.docker.mk` — contains `build` and `push` targets
 - `Makefile.terraform.mk` — contains `apply` and `destroy` targets
 
 The glob `Makefile.*.mk` matches all files and includes them in alphabetical order.
+
+`-include` (with a leading `-`) is optional — make won't error if the file doesn't exist. `Makefile.local.mk` is useful for local overrides (variables, targets) without modifying shared files. Add it to `.gitignore`.
+
+See example: [examples/make/includes/Makefile.local.mk.example](examples/make/includes/Makefile.local.mk.example)
 
 <!-- BEGIN footer -->
 
