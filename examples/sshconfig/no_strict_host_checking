@@ -1,0 +1,3 @@
+Host *-demo *.sikademo.com *.cyber-crypt.com
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null

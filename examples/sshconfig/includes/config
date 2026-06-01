@@ -1,0 +1,6 @@
+Include /Users/ondrej/Projects/training/meta-training/examples/sshconfig/includes/sshconfigs/*.conf
+
+Host *
+  ServerAliveInterval 60
+  AddKeysToAgent yes
+  User root

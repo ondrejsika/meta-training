@@ -1,0 +1,4 @@
+Host vm
+  HostName vm.sikademo.com
+  User root
+  Port 22

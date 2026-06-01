@@ -1,0 +1,5 @@
+Host example
+  HostName example.com
+  User root
+  Port 22
+  IdentityFile ~/.ssh/id_ed25519

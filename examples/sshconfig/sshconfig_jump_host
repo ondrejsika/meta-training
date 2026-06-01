@@ -1,0 +1,10 @@
+Host jump
+  HostName jump.sikademo.com
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+
+Host internal
+  HostName vm0.sikademo.com
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+  ProxyJump jump
