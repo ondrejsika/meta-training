@@ -456,6 +456,18 @@ Copy from remote:
 scp root@vm.sikademo.com:/root/file.txt .
 ```
 
+### MC over SSH
+
+```
+mc . sh://root@vm.sikademo.com
+```
+
+or
+
+```
+mc sh://root@vm.sikademo.com sh://root@vm2.sikademo.com
+```
+
 ## Git
 
 ## Git Rebase Interactive
