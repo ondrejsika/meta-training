@@ -204,6 +204,238 @@ Specific
 
 ## SSH
 
+### What is SSH
+
+SSH (Secure Shell) is a protocol for securely connecting to remote machines over a network. It encrypts all traffic including passwords.
+
+### Connect to Remote Server
+
+```
+ssh <user>@<hostname>
+```
+
+Example:
+
+```
+ssh root@vm.sikademo.com
+```
+
+Connect to a specific port:
+
+```
+ssh -p 2222 root@vm.sikademo.com
+```
+
+### SSH Agent
+
+The SSH agent holds your decrypted private keys in memory so you don't have to enter the passphrase every time.
+
+Start the agent:
+
+```
+eval $(ssh-agent)
+```
+
+Add your keys:
+
+```
+ssh-add
+```
+
+Or specific key
+
+```
+ssh-add ~/.ssh/sikademo_id_ed25519
+```
+
+List loaded keys:
+
+```
+ssh-add -l
+```
+
+### Generate SSH Key
+
+Generate a new ED25519 key (recommended):
+
+```
+ssh-keygen -t ed25519 -C "root@vm.sikademo.com"
+```
+
+Generate RSA key (wider compatibility):
+
+```
+ssh-keygen -t rsa -b 4096 -C "root@vm.sikademo.com"
+```
+
+Keys are stored in `~/.ssh/`:
+
+- `~/.ssh/id_ed25519` - private key (keep secret!)
+- `~/.ssh/id_ed25519.pub` - public key (share this)
+
+### Authorized Keys
+
+The file `~/.ssh/authorized_keys` on the server contains public keys allowed to log in. Each line is one public key.
+
+```
+cat ~/.ssh/authorized_keys
+```
+
+### Copy Public Key to Server
+
+```
+ssh-copy-id root@vm.sikademo.com
+```
+
+Or manually append your public key to `~/.ssh/authorized_keys` on the server.
+
+### SSH Config File
+
+The SSH config file is at `~/.ssh/config`. It lets you define aliases and options for hosts so you don't have to type them every time.
+
+Basic config:
+
+```
+Host vm
+  HostName vm.sikademo.com
+  User root
+  Port 22
+```
+
+See example: [examples/sshconfig/sshconfig_basic](examples/sshconfig/sshconfig_basic)
+
+Then connect with just:
+
+```
+ssh vm
+```
+
+#### Include Other Config Files
+
+You can split your SSH config into multiple files using `Include`:
+
+```
+Include ~/.ssh/sshconfigs/foo/*.conf
+Include ~/.ssh/sshconfigs/bar/*.conf
+```
+
+Put this at the top of `~/.ssh/config`, then keep per-project or per-environment configs in separate files:
+
+```
+~/.ssh/config  # main config with Include
+~/.ssh/sshconfigs/foo/sshconfig.conf
+~/.ssh/sshconfigs/bar/sshconfig.conf
+```
+
+> **Note:** `Include` paths are always resolved relative to `~/.ssh/`, regardless of where the config file is. When using `-F` with a config outside `~/.ssh/`, use an absolute path:
+>
+> ```
+> Include /path/to/sshconfigs/*.conf
+> ```
+
+See example: [examples/sshconfig/includes](examples/sshconfig/includes)
+
+Try it:
+
+```
+ssh -F examples/sshconfig/includes/config bar-vm2
+```
+
+#### Specify Custom Config File
+
+Use `-F` to specify a different config file:
+
+```
+ssh -F ~/.ssh/config_work root@vm.sikademo.com
+```
+
+Disable config file entirely:
+
+```
+ssh -F /dev/null root@vm.sikademo.com
+```
+
+#### Disable Host Key Checking for Specific Hosts
+
+Useful for ephemeral or demo servers where the host key changes often:
+
+```
+Host *.sikademo.com demo-* *-demo
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+```
+
+`StrictHostKeyChecking no` skips the host key verification prompt. `UserKnownHostsFile=/dev/null` prevents saving the key to `~/.ssh/known_hosts`. The `Host` pattern supports multiple patterns and wildcards on one line.
+
+See example: [examples/sshconfig/no_strict_host_checking](examples/sshconfig/no_strict_host_checking)
+
+#### Specify Identity File
+
+```
+Host vm
+  HostName vm.sikademo.com
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+```
+
+See example: [examples/sshconfig/sshconfig_with_identity](examples/sshconfig/sshconfig_with_identity)
+
+#### Jump Host (Bastion)
+
+Connect to an internal server through a bastion/jump host:
+
+```
+Host bastion
+  HostName jump.sikademo.com
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+
+Host internal
+  HostName 10.0.0.10
+  User root
+  IdentityFile ~/.ssh/id_ed25519
+  ProxyJump jump
+```
+
+See example: [examples/sshconfig/sshconfig_jump_host](examples/sshconfig/sshconfig_jump_host)
+
+Then connect to the internal server directly:
+
+```
+ssh internal
+```
+
+#### SSH Tunnel (Local Port Forwarding)
+
+Forward a local port to a remote service:
+
+```
+ssh -L 8000:localhost:80 root@vm.sikademo.com
+```
+
+This makes `localhost:8000` on your machine connect to port `80` on the remote server.
+
+#### SSH Tunnel (Remote Port Forwarding)
+
+Expose a local port on the remote server:
+
+```
+ssh -R 8000:localhost:80 root@vm.sikademo.com
+```
+
+This makes `vm.sikademo.com:8000` connect to port `80` on your local machine.
+
+### Useful SSH Options
+
+| Option              | Description                                 |
+| ------------------- | ------------------------------------------- |
+| `-v`                | Verbose output (debug connection issues)    |
+| `-A`                | Forward SSH agent to remote (use with care) |
+| `-N`                | No remote command (useful for tunnels only) |
+| `-f`                | Run in background                           |
+| `-L port:host:port` | Local port forwarding                       |
+| `-R port:host:port` | Remote port forwarding                      |
+
 ## Git
 
 ## Git Rebase Interactive
