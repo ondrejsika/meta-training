@@ -743,6 +743,39 @@ make
 make build-push PROJECT=foo
 ```
 
+Includes example
+
+```
+cd ./examples/make/includes
+```
+
+```
+make build
+```
+
+```
+make push
+```
+
+```
+make apply
+```
+
+```
+make all
+```
+
+The `Makefile` uses `include` to split targets into separate files:
+
+```makefile
+include Makefile.*.mk
+```
+
+- `Makefile.docker.mk` — contains `build` and `push` targets
+- `Makefile.terraform.mk` — contains `apply` and `destroy` targets
+
+The glob `Makefile.*.mk` matches all files and includes them in alphabetical order.
+
 <!-- BEGIN footer -->
 
 ## Thank you! & Questions?
