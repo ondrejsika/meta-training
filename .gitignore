@@ -9,6 +9,7 @@
 *.log
 *.backup
 *.local.md
+Makefile.local.mk
 
 # Node JS
 node_modules
