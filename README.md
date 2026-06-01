@@ -618,6 +618,55 @@ vim $profile
 vim C:\Users\demo\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps
 ```
 
+## Custom Scripts
+
+We have 3 options
+
+- sh / bash
+- Makefile
+- Go
+
+### Custom Bash Scripts
+
+Advantages
+
+- easy to write (for simple list of task)
+- run almosr everywhere (linux, mac)
+- distribution using Git
+
+Disadvantages
+
+- hart to write comples functionality
+- complex scripts are not so easy to read
+
+### Makefile
+
+Advantages
+
+- runs everywhere (even on windows)
+- autocomplete everywhere (even on windows)
+- simple to write
+- ideal for projects (make dev for dev run, ...)
+
+Disadvantages
+
+- not ideal for complex tasks
+- `make` is not everywhere
+
+### Custom Go CLI
+
+Advantages
+
+- Great for complex scripts
+- single static binary (run everywhere, even on windows)
+- easy distribution
+- native autocomplete (even on windows)
+- great ecosystem, libraries, ...
+
+Disadvantages
+
+- hard to make local changes (distributed as binary)
+
 ## Go CLI
 
 Example: <https://github.com/ondrejsikax/2026-05-31-o2-cli>
