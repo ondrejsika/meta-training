@@ -8,6 +8,7 @@
 # Generic
 *.log
 *.backup
+*.local.md
 
 # Node JS
 node_modules
